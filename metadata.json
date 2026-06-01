@@ -1,0 +1,6 @@
+{
+  "name": "Samarkand Local Mate",
+  "description": "Samarkand mustaqil sayyohlari uchun samimiy va ishonchli 1:1 gid xizmati.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

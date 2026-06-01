@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html class="light" lang="uz">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Samarkand Local Mate - Samimiy va Ishonchli</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#9f402d",
+                    "on-primary-container": "#5a0d02",
+                    "secondary-fixed-dim": "#a0c9ff",
+                    "primary-container": "#e2725b",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#2d6197",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#ffb4a5",
+                    "surface-dim": "#dbdad5",
+                    "surface-bright": "#fbf9f4",
+                    "on-surface": "#1b1c19",
+                    "primary-fixed-dim": "#ffb4a5",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#92c1fe",
+                    "on-primary-fixed-variant": "#802918",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface-container": "#f0eee9",
+                    "on-primary-fixed": "#3e0500",
+                    "on-background": "#1b1c19",
+                    "on-secondary-fixed-variant": "#07497d",
+                    "on-tertiary-container": "#462200",
+                    "outline-variant": "#ddc0ba",
+                    "on-tertiary-fixed-variant": "#6e3900",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#001c37",
+                    "surface": "#fbf9f4",
+                    "tertiary-container": "#cb8241",
+                    "on-error": "#ffffff",
+                    "tertiary": "#8d4f11",
+                    "background": "#fbf9f4",
+                    "on-surface-variant": "#56423e",
+                    "surface-variant": "#e4e2dd",
+                    "inverse-on-surface": "#f2f1ec",
+                    "surface-container-high": "#eae8e3",
+                    "on-secondary-container": "#144f84",
+                    "tertiary-fixed-dim": "#ffb77d",
+                    "surface-tint": "#9f402d",
+                    "secondary-fixed": "#d2e4ff",
+                    "tertiary-fixed": "#ffdcc3",
+                    "primary-fixed": "#ffdad3",
+                    "surface-container-low": "#f5f3ee",
+                    "outline": "#89726d",
+                    "on-tertiary-fixed": "#2f1500",
+                    "inverse-surface": "#30312e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-md": "24px",
+                    "container-max": "1200px",
+                    "stack-sm": "12px",
+                    "margin-desktop": "40px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "stack-lg": "48px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "label-sm": [
+                            "Work Sans"
+                    ],
+                    "label-md": [
+                            "Work Sans"
+                    ],
+                    "headline-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Work Sans"
+                    ],
+                    "headline-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg-mobile": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-md": [
+                            "Work Sans"
+                    ]
+            },
+            "fontSize": {
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-sm": [
+                            "20px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        body { font-family: 'Work Sans', sans-serif; background-color: #fbf9f4; scroll-behavior: smooth; }
+        .font-headline-sm, .font-headline-md, .font-display-lg { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .card-shadow { box-shadow: 0 4px 12px rgba(45, 97, 151, 0.05); }
+        .fade-in { animation: fadeIn 0.3s ease-in-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="text-on-surface">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-sm">
+    <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="flex items-center gap-2 cursor-pointer active:scale-95 transition-transform">
+            <img alt="Samarkand Local Mate Logo" class="h-10 w-10 object-contain animate-pulse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAQAElEQVR4AezdCbx93//Q88/fPJMh8yxDIVNCppAhNCHKWIaSIjKV/ppQxjIUZShDhsjYX1RChiYiZUhIFBERmSXreb+f9fmt7/6cc+8Z7z3n3Nd97HXX3muvvYbXmt7rvdbe51f60F8EIhCBCEQgAhGIQAQiEIEIRCACj07gQwqAhy/iMhiBCEQgAhGIQAQiEIEIRCACEfiQAqBKEIEIRCACEYhABCIQgQhEIAIReHgCI4PtABgQOiIQgQhEIAIRiEAEIhCBCEQgAo9MQN5SAKCQiUAEIhCBCEQgAhGIQAQiEIEIPC6Bp5ylAHjC0L8IRCACEYhABCIQgQhEIAIRiMCjEvgiXykAvuDQ/whEIAIRiEAEIhCBCEQgAhGIQAQicH8E9mclwyBEAiBEHiHwEAnknUIgBEIgBEIgBEIgBC6OQBQAF5UVSRgIhEAIXBaBpDoEQiAEQiAEQiAEQmA3AlEAbMctd4RACIRACJyXQJ4eAiEQAiEQAiEQAiGwE4EoAHbClptCIARCIATOSSDPDoEQiAEQiAEQiAEQ2IVAFAC7UMs9IRACIRAC5yOQJ4dACIRACIRACIRACOxEIAqAnbDlphAIgRAIgXMRyHNDIARCIAD///ZBzLFwAAAAZJREFUAwB7VMn+IdR5gwAAAABJRU5ErkJggg=="/>
+            <span class="font-headline-md text-headline-md text-primary font-bold">Samarkand Local Mate</span>
+        </div>
+        <nav class="hidden md:flex gap-8 items-center">
+            <button onclick="scrollToSection('about')" class="font-label-md text-label-md text-on-surface hover:text-primary transition-colors">Biz haqimizda</button>
+            <button onclick="scrollToSection('mates')" class="font-label-md text-label-md text-on-surface hover:text-primary transition-colors">Bizning Mate'lar</button>
+            <button onclick="openMatchmaker()" class="font-label-md text-label-md text-secondary hover:text-primary font-semibold transition-colors flex items-center gap-1">
+                <span class="material-symbols-outlined text-lg">psychology</span> AI Matchmaker
+            </button>
+        </nav>
+        <div class="flex items-center gap-4">
+            <button onclick="openBookingModal()" class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:bg-primary-container transition-colors duration-200">
+                Band qilish
+            </button>
+            <button onclick="toggleMobileMenu()" class="md:hidden block text-on-surface hover:text-primary transition-colors">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Navigation Menu -->
+<div id="mobileMenu" class="fixed inset-y-0 right-0 w-64 bg-surface z-50 shadow-2xl p-6 hidden flex flex-col gap-6 transform transition-transform duration-300 translate-x-full">
+    <div class="flex justify-between items-center pb-4 border-b border-outline-variant/30">
+        <span class="font-headline-sm text-headline-sm text-primary font-semibold">Menyu</span>
+        <button onclick="toggleMobileMenu()" class="text-on-surface hover:text-primary">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+    </div>
+    <nav class="flex flex-col gap-4">
+        <button onclick="scrollToSection('about'); toggleMobileMenu()" class="text-left font-label-md text-label-md text-on-surface hover:text-primary py-2 transition-colors">Biz haqimizda</button>
+        <button onclick="scrollToSection('mates'); toggleMobileMenu()" class="text-left font-label-md text-label-md text-on-surface hover:text-primary py-2 transition-colors">Bizning Mate'lar</button>
+        <button onclick="openMatchmaker(); toggleMobileMenu()" class="text-left font-label-md text-label-md text-secondary hover:text-primary py-2 transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-lg">psychology</span> AI Matchmaker
+        </button>
+    </nav>
+    <button onclick="openBookingModal(); toggleMobileMenu()" class="w-full bg-primary text-on-primary py-3 rounded-full font-label-md text-label-md hover:bg-primary-container transition-colors">
+        Hozir Band Qilish
+    </button>
+</div>
+
+<!-- Main Content -->
+<main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative h-[85vh] flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover" alt="Registan Square at sunset, Samarkand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoiWivH-PrDTA-Vyy6YwV5sOWGqoN2AZko3lzxQMzDrScmyywMGneXCmgcw85urExcL_sVG8uouTzcdmrRMtIgFBGiCkd9a54ru_sDMbaMh9-z3lAqybPCGOJ3oAM7okCnGYFXCx7TpJSqf7obUU97Hj5azr7el2EqD7KtNgTSuO49j0SGJUANcl_6x4j96K5LBh3xwKNOuwhvhN31JWoN33Q9m969wyF9jQK5gWIA1k34aVMbK6GFPGhfYbSR5eUxT_XxhkywHS9r"/>
+            <div class="absolute inset-0 bg-gradient-to-r from-surface/95 via-surface/75 to-transparent"></div>
+        </div>
+        <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+            <div class="max-w-2xl text-left">
+                <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-stack-sm leading-tight font-bold">
+                    Sizning Samarkandingizni ko'rsatadigan mahalliy gid bilan tanishing.
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md max-w-lg">
+                    Mustaqil sayyohlar uchun samimiy va ishonchli 1:1 gid xizmati. Haqiqiy do'stona mezbonlikni his qiling.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="openMatchmaker()" class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline-sm text-headline-sm shadow-lg hover:translate-y-[-2px] transition-all active:scale-95 flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined">psychology</span> Gidni AI Bilat Topish
+                    </button>
+                    <button onclick="scrollToSection('mates')" class="bg-surface-container-lowest border-2 border-secondary text-secondary px-8 py-4 rounded-full font-headline-sm text-headline-sm hover:bg-secondary/5 transition-all">
+                        Bizning Mate'lar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Trips / Local Persistence Section -->
+    <section id="upcomingTripsSection" class="py-6 bg-primary-fixed text-on-primary-fixed-variant hidden animate-pulse">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-3xl">local_activity</span>
+                <div>
+                    <h4 class="font-bold font-headline-sm text-headline-sm">Sizning yaqinlashayotgan sayohatingiz bor!</h4>
+                    <p id="upcomingTripText" class="font-body-md text-body-md"></p>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <button onclick="openMyBookings()" class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-md text-label-md hover:bg-primary-container transition-colors">
+                    Ko'rish
+                </button>
+                <button onclick="cancelTripQuick()" class="bg-transparent border border-outline px-4 py-2 rounded-full font-label-md text-label-md hover:bg-black/5 transition-colors">
+                    Bekor qilish
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience / About Section -->
+    <section id="about" class="py-stack-lg bg-surface px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+        <div class="max-w-3xl mx-auto">
+            <div class="inline-flex items-center gap-2 bg-secondary-container/30 text-on-secondary-container px-4 py-1 rounded-full mb-stack-sm">
+                <span class="material-symbols-outlined text-[18px]">travel_explore</span>
+                <span class="font-label-sm text-label-sm">Mustaqil sayyohlar uchun</span>
+            </div>
+            <h2 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Nega aynan biz?</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                Bizning xizmatimiz 20-40 yoshdagi, an'anaviy guruh turlaridan charchagan va haqiqiy mahalliy tajribani izlayotgan mustaqil sayyohlar uchun maxsus ishlab chiqilgan. Sizni shunchaki ekskursiya emas, balki Silk Road ruhini his qilish kutmoqda.
+            </p>
+        </div>
+    </section>
+
+    <!-- Bento Grid Section -->
+    <section id="mates" class="py-stack-lg bg-surface-container-low">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-stack-md gap-4">
+                <div class="max-w-xl">
+                    <h2 class="font-display-lg-mobile text-display-lg-mobile md:font-headline-md md:text-headline-md text-on-surface mb-2">O'zingizga mos gidni toping</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Xohishingizga ko'ra yoki SI yordamida 1:1 gid tanlash imkoniyati.</p>
+                </div>
+                <button onclick="scrollToSection('mates-list')" class="text-primary font-label-md text-label-md flex items-center gap-1 hover:gap-2 transition-all">
+                    Barcha gidlar <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+
+            <!-- Bento Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <!-- AI Match Card -->
+                <div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 flex flex-col md:flex-row gap-8 card-shadow items-center relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <span class="material-symbols-outlined text-[120px] text-primary" style="font-variation-settings: 'FILL' 1;">psychology</span>
+                    </div>
+                    <div class="flex-1 z-10 text-center md:text-left">
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4">Sun'iy intellekt yordamchisi</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6">Bizning SI algoritmi sizning qiziqishlaringiz, tilingiz va sayohat uslubingizga qarab eng mos mahalliy do'stni bir necha soniyada topib beradi.</p>
+                        <button onclick="openMatchmaker()" class="bg-secondary text-on-secondary px-6 py-3 rounded-xl font-label-md text-label-md shadow-sm hover:shadow-md transition-shadow flex items-center gap-2">
+                            <span class="material-symbols-outlined">psychology</span> SI bilan tanlash
+                        </button>
+                    </div>
+                    <div class="flex-1 w-full max-w-[280px] h-[320px] rounded-xl overflow-hidden relative z-10 shadow-xl">
+                        <img class="w-full h-full object-cover" alt="Uzbek Female Local Guide Dilnoza" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7v3Ko5OhfrJc4S8Tatvp5RuBw_YLM-d5Ieb0mH7_T4pYSKc8Xa1sEMaT3WlrbwTM24VR7yuTrFxTTtE9CfASju1j6Y8xwNymjGzwi7yWlVKrGSoYDptYdM6xQW3n001rODrsu6Q9-EMT3QyynyjHFRFMyz-ks5gjLU1RXKjYihlgiGTQ83ueKJGybS0B4ZZURSosTArxc8W83fN7D_AWwGOjI5rJLnwPax1Q9PX7RFKi-i__fwsqyHwfZH6bujAquCmTwCZ8Y605R"/>
+                        <div class="absolute bottom-4 left-4 right-4 bg-surface/80 backdrop-blur-md p-3 rounded-lg border border-white/20">
+                            <p class="font-label-sm text-label-sm text-on-surface">Tavsiya etilgan mate:</p>
+                            <p class="font-headline-sm text-headline-sm text-primary">Dilnoza</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Category Cards -->
+                <div onclick="openCategoryModal('Gastronomik')" class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between card-shadow hover:translate-y-[-4px] transition-all cursor-pointer h-full group relative overflow-hidden">
+                    <span class="material-symbols-outlined text-[40px] group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+                    <div class="mt-8 md:mt-0">
+                        <h3 class="font-headline-sm text-headline-sm mb-2 flex items-center gap-2">Gastronomik Mate <span class="material-symbols-outlined text-sm">open_in_new</span></h3>
+                        <p class="font-body-md text-body-md opacity-90">Eng yaxshi palov va milliy taomlarni biladigan sirdosh.</p>
+                    </div>
+                </div>
+
+                <!-- Bento Category Cards -->
+                <div onclick="openCategoryModal('Tarixchi')" class="md:col-span-4 bg-secondary text-on-secondary rounded-xl p-8 flex flex-col justify-between card-shadow hover:translate-y-[-4px] transition-all cursor-pointer group">
+                    <span class="material-symbols-outlined text-[40px] group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+                    <div class="mt-8 md:mt-0">
+                        <h3 class="font-headline-sm text-headline-sm mb-2 flex items-center gap-2">Tarixchi Mate <span class="material-symbols-outlined text-sm">open_in_new</span></h3>
+                        <p class="font-body-md text-body-md opacity-90">Amir Temur davridan bugungacha bo'lgan sirlar bilimdoni.</p>
+                    </div>
+                </div>
+
+                <!-- Bento Category Cards -->
+                <div onclick="openCategoryModal('Foto')" class="md:col-span-4 bg-surface-container-highest rounded-xl p-8 flex flex-col justify-between card-shadow hover:translate-y-[-4px] transition-all cursor-pointer group">
+                    <span class="material-symbols-outlined text-[40px] text-tertiary group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">camera_alt</span>
+                    <div class="mt-8 md:mt-0">
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 flex items-center gap-2">Foto Mate <span class="material-symbols-outlined text-sm">open_in_new</span></h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Instagrambop nuqtalarni va eng zo'r rakurslarni biluvchi.</p>
+                    </div>
+                </div>
+
+                <!-- Bento Category Cards -->
+                <div onclick="openCategoryModal('Bozor')" class="md:col-span-4 bg-tertiary-fixed rounded-xl p-8 flex flex-col justify-between card-shadow hover:translate-y-[-4px] transition-all cursor-pointer group">
+                    <span class="material-symbols-outlined text-[40px] text-on-tertiary-fixed-variant group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">local_mall</span>
+                    <div class="mt-8 md:mt-0">
+                        <h3 class="font-headline-sm text-headline-sm text-on-tertiary-fixed-variant mb-2 flex items-center gap-2">Bozor Mate <span class="material-symbols-outlined text-sm">open_in_new</span></h3>
+                        <p class="font-body-md text-body-md text-on-tertiary-fixed-variant opacity-80">Siyob bozorida eng yaxshi narxlarni savdolasha oladigan do'st.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mates Directory Section -->
+    <section id="mates-list" class="py-stack-lg bg-surface">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Bizning eng faol mahalliy gidlarimiz</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">Har bir "Mate" sayohatchilar tomonidan to'liq tekshirilgan va tasdiqlangan.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter" id="matesGrid">
+                <!-- Will be dynamically populated via JavaScript to enable comprehensive interactive viewing -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+        <div class="bg-surface-container rounded-3xl p-margin-mobile md:p-margin-desktop border border-outline-variant relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
+            <h2 class="font-display-lg-mobile md:font-headline-md md:text-headline-md text-on-surface mb-stack-sm relative z-10 font-bold">Samarkand sarguzashtingizni bugun boshlang</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md max-w-xl mx-auto relative z-10">
+                Sizni kutayotgan yuzlab mahalliylar orasidan o'zingizga mosini tanlang. Samimiy munosabat va ishonchli xizmat kafolatlanadi.
+            </p>
+            <button onclick="openBookingModal()" class="bg-primary text-on-primary px-10 py-5 rounded-full font-headline-md text-headline-md shadow-xl hover:scale-105 active:scale-95 transition-all relative z-10">
+                Gidni tanlash va Band qilish
+            </button>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-stack-lg mt-stack-lg bg-surface-container-lowest text-on-surface border-t border-outline-variant/30">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-2">
+                <img alt="Samarkand Local Mate Logo" class="h-8 w-8 object-contain" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAQAElEQVR4AezdCbx93//Q88/fPJMh8yxDIVNCppAhNCHKWIaSIjKV/ppQxjIUZShDhsjYX1RChiYiZUhIFBERmSXreb+f9fmt7/6cc+8Z7z3n3Nd97HXX3muvvYbXmt7rvdbe51f60F8EIhCBCEQgAhGIQAQiEIEIRCACj07gQwqAhy/iMhiBCEQgAhGIQAQiEIEIRCACEfiQAqBKEIEIRCACEYhABCIQgQhEIAIReHgCI4PtABgQOiIQgQhEIAIRiEAEIhCBCEQgAo9MQN5SAKCQiUAEIhCBCEQgAhGIQAQiEIEIPC6Bp5ylAHjC0L8IRCACEYhABCIQgQhEIAIRiMCjEvgiXykAvuDQ/whEIAIRiEAEIhCBCEQgAhGIQAQicH8E9mclwyBEAiBEHiHwEAnknUIgBEIgBEIgBEIgBC6OQBQAF5UVSRgIhEAIXBaBpDoEQiAEQiAEQiAEQmA3AlEAbMctd4RACIRACJyXQJ4eAiEQAiEQAiEQAiGwE4EoAHbClptCIARCIATOSSDPDoEQiAEQiAEQiAEQ2IVAFAC7UMs9IRACIRAC5yOQJ4dACIRACIRACIRACOxEIAqAnbDlphAIgRAIgXMRyHNDIARCIAD///ZBzLFwAAAAZJREFUAwB7VMn+IdR5gwAAAABJRU5ErkJggg=="/>
+                <span class="font-headline-sm text-headline-sm text-primary font-bold">Samarkand Local Mate</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant">Sizning Silk Road bo'ylab ishonchli yo'l ko'rsatuvchingiz va yaqin do'stingiz.</p>
+        </div>
+        <div class="flex flex-col gap-stack-sm">
+            <h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Menyular</h4>
+            <nav class="flex flex-col gap-2">
+                <button onclick="scrollToSection('about')" class="text-left text-on-surface-variant font-body-md hover:text-primary transition-colors">Biz haqimizda</button>
+                <button onclick="scrollToSection('mates')" class="text-left text-on-surface-variant font-body-md hover:text-primary transition-colors">Bizning Mate'lar</button>
+                <button onclick="openMatchmaker()" class="text-left text-primary font-body-md hover:underline flex items-center gap-1">AI Matchmaker <span class="material-symbols-outlined text-sm">psychology</span></button>
+                <button onclick="openMyBookings()" class="text-left text-on-surface-variant font-body-md hover:text-primary transition-colors">Aktiv buyurtmalarim</button>
+            </nav>
+        </div>
+        <div class="flex flex-col gap-stack-sm">
+            <h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Bog'lanish</h4>
+            <nav class="flex flex-col gap-2">
+                <span class="text-on-surface-variant font-body-md">Samarkand, Uzbekistan</span>
+                <span class="text-on-surface-variant font-body-md">Telegram: @sam_local_mate</span>
+                <span class="text-on-surface-variant font-body-md">Email: support@samarkandlocalmate.com</span>
+            </nav>
+        </div>
+        <div class="flex flex-col gap-stack-sm">
+            <h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold font-bold">Bizni kuzating</h4>
+            <div class="flex gap-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary cursor-pointer hover:bg-secondary hover:text-on-secondary transition-all">
+                    <span class="material-symbols-outlined">public</span>
+                </a>
+                <a href="https://t.me" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary cursor-pointer hover:bg-secondary hover:text-on-secondary transition-all">
+                    <span class="material-symbols-outlined">alternate_email</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mt-stack-lg pt-stack-sm border-t border-outline-variant/30 text-center px-margin-mobile">
+        <p class="font-body-md text-body-md text-on-surface-variant">© 2026 Samarkand Local Mate. Barcha huquqlar himoyalangan.</p>
+    </div>
+</footer>
+
+<!-- Interactive MODAL: AI Matchmaker -->
+<div id="matchmakerModal" class="fixed inset-0 z-50 bg-black/60 items-center justify-center p-4 hidden flex transition-opacity duration-300">
+    <div class="bg-surface-container-lowest max-w-2xl w-full rounded-2xl p-6 md:p-8 shadow-2xl relative fade-in max-h-[90vh] overflow-y-auto">
+        <button onclick="closeMatchmaker()" class="absolute top-4 right-4 text-on-surface hover:text-primary">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+        
+        <!-- Header -->
+        <div class="text-center mb-6">
+            <div class="w-16 h-14 bg-secondary-container/40 text-secondary mx-auto rounded-full flex items-center justify-center mb-3">
+                <span class="material-symbols-outlined text-3xl">psychology</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-on-surface">SI Yordamida Ideal Gidni Toping</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-1">Mos variantni taklif qilishimiz uchun quyidagi savollarga javob bering.</p>
+        </div>
+
+        <!-- Wizard Content -->
+        <div id="matcherStep1" class="wizard-step">
+            <h4 class="font-headline-sm text-headline-sm text-primary mb-4 text-center">1. Sizni Samarkandda nimalar ko'proq qiziqtiradi?</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-outline-variant hover:border-primary cursor-pointer transition-colors bg-surface-container-low">
+                    <input type="radio" name="interest" value="Tarixchi" class="text-primary focus:ring-primary h-5 w-5" checked />
+                    <div>
+                        <p class="font-bold text-on-surface font-headline-sm">Tarix va Me'morchilik</p>
+                        <p class="text-sm text-on-surface-variant font-body-md">Obidalar, maqbaralar va qadimiy tarix.</p>
+                    </div>
+                </label>
+                <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-outline-variant hover:border-primary cursor-pointer transition-colors bg-surface-container-low">
+                    <input type="radio" name="interest" value="Gastronomik" class="text-primary focus:ring-primary h-5 w-5" />
+                    <div>
+                        <p class="font-bold text-on-surface font-headline-sm">Samarkand Taomlari</p>
+                        <p class="text-sm text-on-surface-variant font-body-md">Eng mazali palovxona va choyxonalar.</p>
+                    </div>
+                </label>
+                <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-outline-variant hover:border-primary cursor-pointer transition-colors bg-surface-container-low">
+                    <input type="radio" name="interest" value="Foto" class="text-primary focus:ring-primary h-5 w-5" />
+                    <div>
+                        <p class="font-bold text-on-surface font-headline-sm">Fotografiya va Manzaralar</p>
+                        <p class="text-sm text-on-surface-variant font-body-md">Instagram uchun ajoyib va yashirin rakurslar.</p>
+                    </div>
+                </label>
+                <label class="flex items-center gap-3 p-4 rounded-xl border-2 border-outline-variant hover:border-primary cursor-pointer transition-colors bg-surface-container-low">
+                    <input type="radio" name="interest" value="Bozor" class="text-primary focus:ring-primary h-5 w-5" />
+                    <div>
+                        <p class="font-bold text-on-surface font-headline-sm">Bozorlik va Savdo</p>
+                        <p class="text-sm text-on-surface-variant font-body-md">Siyob bozori bo'ylab qiziqarli xaridlar.</p>
+                    </div>
+                </label>
+            </div>
+            <div class="mt-8 flex justify-end">
+                <button onclick="nextStep(2)" class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-md text-label-md flex items-center gap-2">
+                    Davom etish <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="matcherStep2" class="wizard-step hidden">
+            <h4 class="font-headline-sm text-headline-sm text-primary mb-4 text-center">2. Siz asosan kimlar bilan sayohat qilyapsiz?</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <label class="flex flex-col items-center text-center p-6 rounded-xl border-2 border-outline-variant hover:border-primary cursor-pointer transition-colors bg-surface-container-low">
+                    <input type="radio" name="style" value="solo" class="text-primary focus:ring-primary h-5 w-5 mb-3" checked />
+                    <span class="material-symbols-outlined text-3xl text-secondary mb-2">person</span>
+                    <span class="font-bold text-on-surface font-headline-sm">Yolg'iz sayohatchi</span>
+                </label>
+                <label class="flex flex-col items-center text-center p-6 rounded-xl border-2 border-outline-variant hover:border-primary cursor-pointer transition-colors bg-surface-container-low">
+                    <input type="radio" name="style" value="family" class="text-primary focus:ring-primary h-5 w-5 mb-3" />
+                    <span class="material-symbols-outlined text-3xl text-secondary mb-2">group</span>
+                    <span class="font-bold text-on-surface font-headline-sm">Oila / Do'stlar</span>
+                </label>
+                <label class="flex flex-col items-center text-center p-6 rounded-xl border-2 border-outline-variant hover:border-primary cursor-pointer transition-colors bg-surface-container-low">
+                    <input type="radio" name="style" value="couple" class="text-primary focus:ring-primary h-5 w-5 mb-3" />
+                    <span class="material-symbols-outlined text-3xl text-secondary mb-2">favorite</span>
+                    <span class="font-bold text-on-surface font-headline-sm">Juftlikda</span>
+                </label>
+            </div>
+            <div class="mt-8 flex justify-between">
+                <button onclick="nextStep(1)" class="text-secondary font-label-md text-label-md flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">arrow_back</span> Orqaga
+                </button>
+                <button onclick="nextStep(3)" class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-md text-label-md flex items-center gap-2">
+                    Davom etish <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="matcherStep3" class="wizard-step hidden">
+            <h4 class="font-headline-sm text-headline-sm text-primary mb-4 text-center">3. Muloqot qilish uchun qaysi til qulayroq?</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <label class="flex flex-col items-center text-center p-6 rounded-xl border-2 border-outline-variant hover:border-primary cursor-pointer transition-colors bg-surface-container-low">
+                    <input type="radio" name="lang" value="uz" class="text-primary focus:ring-primary h-5 w-5 mb-3" checked />
+                    <span class="font-bold text-on-surface font-display-lg-mobile mb-1">O'Z</span>
+                    <span class="font-bold text-on-surface font-headline-sm">O'zbek tili</span>
+                </label>
+                <label class="flex flex-col items-center text-center p-6 rounded-xl border-2 border-outline-variant hover:border-primary cursor-pointer transition-colors bg-surface-container-low">
+                    <input type="radio" name="lang" value="en" class="text-primary focus:ring-primary h-5 w-5 mb-3" />
+                    <span class="font-bold text-on-surface font-display-lg-mobile mb-1">EN</span>
+                    <span class="font-bold text-on-surface font-headline-sm">Ingliz Tili</span>
+                </label>
+                <label class="flex flex-col items-center text-center p-6 rounded-xl border-2 border-outline-variant hover:border-primary cursor-pointer transition-colors bg-surface-container-low">
+                    <input type="radio" name="lang" value="ru" class="text-primary focus:ring-primary h-5 w-5 mb-3" />
+                    <span class="font-bold text-on-surface font-display-lg-mobile mb-1">RU</span>
+                    <span class="font-bold text-on-surface font-headline-sm">Rus Tili</span>
+                </label>
+            </div>
+            <div class="mt-8 flex justify-between">
+                <button onclick="nextStep(2)" class="text-secondary font-label-md text-label-md flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">arrow_back</span> Orqaga
+                </button>
+                <button onclick="performAIMatching()" class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md flex items-center gap-2">
+                    Mate'ni Topish <span class="material-symbols-outlined text-sm">auto_awesome</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Loader screen inside AI matchmaker modal -->
+        <div id="matcherLoading" class="wizard-step hidden py-8 text-center">
+            <div class="relative w-24 h-24 mx-auto mb-6">
+                <!-- Cultural geometric pattern style spinning animation -->
+                <div class="absolute inset-0 rounded-full border-4 border-outline-variant/30"></div>
+                <div class="absolute inset-0 rounded-full border-4 border-t-primary border-r-secondary animate-spin"></div>
+                <span class="material-symbols-outlined text-3xl text-primary absolute inset-0 flex items-center justify-center animate-pulse">auto_awesome</span>
+            </div>
+            <h4 class="font-headline-sm text-headline-sm text-on-surface mt-4 animate-bounce" id="loadingText">Bizning SI eng mos gidni izlamoqda...</h4>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-sm mx-auto mt-2">Sayohat qiziqishlaringiz, tillaringiz va jamoangiz muvofiqligi tahlil qilinmoqda.</p>
+        </div>
+
+        <!-- Match Result screen -->
+        <div id="matcherResult" class="wizard-step hidden text-center">
+            <div class="bg-primary/10 inline-flex items-center gap-2 text-primary px-4 py-1.5 rounded-full mb-4">
+                <span class="material-symbols-outlined text-sm">check_circle</span>
+                <span class="font-label-sm text-label-sm">Uchrashuv topildi! 100% Moslik</span>
+            </div>
+            <h4 class="font-headline-sm text-on-surface mb-6">Siz uchun eng ideal "Mate" topildi:</h4>
+            
+            <div class="flex flex-col md:flex-row gap-6 bg-surface-container-low p-6 rounded-2xl mb-6 text-left items-center">
+                <img id="resultImage" class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover shadow-lg border-4 border-white" src="" alt="Mate Profile"/>
+                <div class="flex-1">
+                    <div class="flex flex-wrap items-center gap-2 mb-2">
+                        <h5 id="resultName" class="font-headline-md text-primary font-bold"></h5>
+                        <span id="resultRatingBadge" class="bg-surface-container-highest px-3 py-0.5 rounded-full text-sm font-semibold text-on-surface flex items-center gap-1"></span>
+                    </div>
+                    <p id="resultBio" class="font-body-md text-on-surface-variant mb-4"></p>
+                    <div id="resultTags" class="flex flex-wrap gap-2"></div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="bookGuideDirectly()" class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md shadow-lg hover:bg-primary-container transition-colors">
+                    Sayohatni Band qilish
+                </button>
+                <button onclick="chatOnTelegram()" class="bg-secondary text-on-secondary px-8 py-3 rounded-full font-label-md text-label-md shadow-lg hover:bg-on-secondary-container transition-colors flex items-center gap-1 justify-center">
+                    <span class="material-symbols-outlined text-lg">alternate_email</span> Telegramda bog'lanish
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Interactive MODAL: Booking Form -->
+<div id="bookingModal" class="fixed inset-0 z-50 bg-black/60 items-center justify-center p-4 hidden flex transition-opacity duration-300">
+    <div class="bg-surface-container-lowest max-w-xl w-full rounded-2xl p-6 md:p-8 shadow-2xl relative fade-in max-h-[90vh] overflow-y-auto">
+        <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-on-surface hover:text-primary">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+
+        <h3 class="font-display-lg-mobile text-on-surface mb-2 font-bold flex items-center gap-2">Sayohatni band qiling <span class="material-symbols-outlined text-primary text-2xl">event</span></h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-6">Tanlangan "Mate" bilan ajoyib sarguzashtni rejalashtirishni boshlang.</p>
+
+        <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-4">
+            <div>
+                <label class="block font-label-md text-on-surface mb-2">Gidni tanlang:</label>
+                <select id="guideSelect" class="w-full bg-surface-container-low border-2 border-outline-variant focus:border-primary rounded-xl p-3 text-on-surface font-body-md">
+                    <option value="Dilnoza">Dilnoza - Mahalliy madaniyat va Tarixchi</option>
+                    <option value="Jasurbek">Jasurbek - Milliy taomlar va Choyxonalar</option>
+                    <option value="Madina">Madina - Fotografiya va Instagrambop joylar</option>
+                    <option value="Bekzod">Bekzod - Siyob bozori va Savdolashish</option>
+                </select>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="block font-label-md text-on-surface mb-2">Sayohat sanasi:</label>
+                    <input type="date" required id="travelDate" class="w-full bg-surface-container-low border-2 border-outline-variant focus:border-primary rounded-xl p-3 text-on-surface font-body-md" />
+                </div>
+                <div>
+                    <label class="block font-label-md text-on-surface mb-2">Sayohat qiluvchilar soni:</label>
+                    <input type="number" min="1" max="20" value="1" required id="travelCount" class="w-full bg-surface-container-low border-2 border-outline-variant focus:border-primary rounded-xl p-3 text-on-surface font-body-md" />
+                </div>
+            </div>
+
+            <div>
+                <label class="block font-label-md text-on-surface mb-2">Sizning ismingiz:</label>
+                <input type="text" placeholder="Masalan: Robert" required id="visitorName" class="w-full bg-surface-container-low border-2 border-outline-variant focus:border-primary rounded-xl p-3 text-on-surface font-body-md" />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="block font-label-md text-on-surface mb-2">Telegram username:</label>
+                    <input type="text" placeholder="@robert_silkroad" required id="visitorTelegram" class="w-full bg-surface-container-low border-2 border-outline-variant focus:border-primary rounded-xl p-3 text-on-surface font-body-md" />
+                </div>
+                <div>
+                    <label class="block font-label-md text-on-surface mb-2">Email manzil:</label>
+                    <input type="email" placeholder="robert@example.com" required id="visitorEmail" class="w-full bg-surface-container-low border-2 border-outline-variant focus:border-primary rounded-xl p-3 text-on-surface font-body-md" />
+                </div>
+            </div>
+
+            <button type="submit" class="w-full bg-primary text-on-primary py-4 rounded-xl font-headline-sm text-headline-sm shadow-lg hover:bg-primary-container transition-colors active:scale-95 duration-100">
+                Band qilish
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Interactive MODAL: Success Booking Alert -->
+<div id="successModal" class="fixed inset-0 z-50 bg-black/60 items-center justify-center p-4 hidden flex transition-opacity duration-300">
+    <div class="bg-surface-container-lowest max-w-md w-full rounded-2xl p-6 md:p-8 shadow-2xl relative fade-in text-center">
+        <div class="w-20 h-20 bg-green-100 text-green-600 mx-auto rounded-full flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Muvaffaqiyatli band qilindi!</h3>
+        <p id="successToastText" class="font-body-md text-body-md text-on-surface-variant mb-6"></p>
+        <button onclick="closeSuccessModal()" class="w-full bg-primary text-on-primary py-3 rounded-full font-label-md text-label-md hover:bg-primary-container transition-colors">
+            Ajoyib! Rahmat
+        </button>
+    </div>
+</div>
+
+<!-- Interactive MODAL: My Bookings Dashboard -->
+<div id="bookingsListModal" class="fixed inset-0 z-50 bg-black/60 items-center justify-center p-4 hidden flex transition-opacity duration-300">
+    <div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl p-6 md:p-8 shadow-2xl relative fade-in max-h-[90vh] overflow-y-auto">
+        <button onclick="closeBookingsList()" class="absolute top-4 right-4 text-on-surface hover:text-primary">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+        
+        <h3 class="font-headline-md text-headline-md text-primary font-bold mb-4 flex items-center gap-2">
+            Aktiv sarguzashtlarim <span class="material-symbols-outlined">luggage</span>
+        </h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-6">Bu yerda sizning rejalashtirilgan turlaringiz va band qilgan qiziqarli Local Mate uchrashuvlaringiz ko'rsatilgan.</p>
+
+        <div id="bookingsContainer" class="space-y-4">
+            <!-- Dynamic bookings will list here -->
+        </div>
+    </div>
+</div>
+
+<!-- Active Category Detailed Dialog Modal -->
+<div id="categoryModal" class="fixed inset-0 z-50 bg-black/60 items-center justify-center p-4 hidden flex transition-opacity duration-300">
+    <div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl p-6 md:p-8 shadow-2xl relative fade-in">
+        <button onclick="closeCategoryModal()" class="absolute top-4 right-4 text-on-surface hover:text-primary">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+
+        <div class="flex items-center gap-4 mb-4">
+            <div id="catIconContainer" class="w-14 h-14 rounded-full flex items-center justify-center text-white"></div>
+            <div>
+                <h3 id="catTitle" class="font-headline-md text-headline-md font-bold text-on-surface"></h3>
+                <p class="font-label-sm text-label-sm text-primary">Tavsiya etiladigan Mate guruhiga oid ma'lumotlar</p>
+            </div>
+        </div>
+
+        <p id="catDesc" class="font-body-md text-body-md text-on-surface-variant mb-6"></p>
+
+        <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4">Ushbu yo'nalishga oid gidlar:</h4>
+        <div id="catMatesList" class="space-y-3 mb-6">
+            <!-- Populated via Javascript -->
+        </div>
+
+        <button onclick="closeCategoryModal(); openBookingModal();" class="w-full bg-primary text-on-primary py-3 rounded-full font-label-md text-label-md hover:bg-primary-container transition-colors">
+            Xizmatni Band Qilish
+        </button>
+    </div>
+</div>
+
+<script>
+    // State management and Local Mate Profile Data
+    const mates = [
+        {
+            id: "dilnoza",
+            name: "Dilnoza",
+            category: "Tarixchi",
+            rating: "4.9",
+            reviews: "142 ta ko'rib chiqish",
+            bio: "Registan, Shohi Zinda va qadimiy Afrosiyob sirlaridan mukammal darajada xabardorman. Bizning me'morchiligimiz haqidagi eng chuqur dostonlarni muloqot orqali yetkazaman.",
+            image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7v3Ko5OhfrJc4S8Tatvp5RuBw_YLM-d5Ieb0mH7_T4pYSKc8Xa1sEMaT3WlrbwTM24VR7yuTrFxTTtE9CfASju1j6Y8xwNymjGzwi7yWlVKrGSoYDptYdM6xQW3n001rODrsu6Q9-EMT3QyynyjHFRFMyz-ks5gjLU1RXKjYihlgiGTQ83ueKJGybS0B4ZZURSosTArxc8W83fN7D_AWwGOjI5rJLnwPax1Q9PX7RFKi-i__fwsqyHwfZH6bujAquCmTwCZ8Y605R",
+            tags: ["Madaniyat", "Tarixchi dushman", "English/Russ./Uzbek"],
+            bgColor: "bg-secondary",
+            icon: "history_edu"
+        },
+        {
+            id: "jasurbek",
+            name: "Jasurbek",
+            category: "Gastronomik",
+            rating: "4.8",
+            reviews: "98 ta ko'rib chiqish",
+            bio: "Haqiqiy devzira palov, tandir go'sht va somsa qayerda tayyorlanadi? Sizni sayyohlar ko'rmaydigan eng haqiqiy palovxonalarga yetaklab olib boraman va taomlarimiz tarixini aytib beraman.",
+            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+            tags: ["Gastronomiya", "Samarkand Palov", "Русский/O'zbekcha"],
+            bgColor: "bg-primary",
+            icon: "restaurant"
+        },
+        {
+            id: "madina",
+            name: "Madina",
+            category: "Foto",
+            rating: "5.0",
+            reviews: "210 ta ko'rib chiqish",
+            bio: "Samarkandning naqshinkor bino gumbazlarini eng go'zal rakurslarda suratga olishni istaysizmi? Men sizga eng mukammal tasvirlarga va nur tushish burchaklariga boy foto turlarni uyushtiraman.",
+            image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
+            tags: ["Fotografiya", "Instagram joziba", "English/Deutsch/Uzbek"],
+            bgColor: "bg-surface-container-highest",
+            icon: "camera_alt"
+        },
+        {
+            id: "bekzod",
+            name: "Bekzod",
+            category: "Bozor",
+            rating: "4.7",
+            reviews: "82 ta ko'rib chiqish",
+            bio: "Siyob bozorining shovqinidan cho'chimang! Men sizga quritilgan mevalar, mazza pashmak, va ipak gilamchalarning asl sifatlilarini eng qulay narxda savdolashib sotib olishda hamroh bo'laman.",
+            image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
+            tags: ["Bozorlik", "Ipak Yo'li", "English/Russ./Uzbek"],
+            bgColor: "bg-tertiary-fixed",
+            icon: "local_mall"
+        }
+    ];
+
+    // Scroll to sections softly
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Toggle menu
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+        if (menu.classList.contains('hidden')) {
+            menu.style.transform = 'translateX(100%)';
+        } else {
+            menu.style.transform = 'translateX(0)';
+        }
+    }
+
+    // Booking modal controllers
+    function openBookingModal(guideName = "") {
+        document.getElementById('bookingModal').classList.remove('hidden');
+        if (guideName) {
+            document.getElementById('guideSelect').value = guideName;
+        }
+    }
+
+    function closeBookingModal() {
+        document.getElementById('bookingModal').classList.add('hidden');
+    }
+
+    // Local Storage persistent state initialization and rendering upcoming trips
+    function initLocalStorageDashboard() {
+        const bookings = JSON.parse(localStorage.getItem('localmate_bookings') || '[]');
+        const upcomingSection = document.getElementById('upcomingTripsSection');
+        const upcomingText = document.getElementById('upcomingTripText');
+
+        if (bookings.length > 0) {
+            const nextTrip = bookings[bookings.length - 1]; // get latest
+            upcomingSection.classList.remove('hidden');
+            upcomingText.textContent = `Yaqindagi sayohat: Gid - ${nextTrip.guide}, sana: ${nextTrip.date}. ${nextTrip.count} kishilik sayohat guruhi.`;
+        } else {
+            upcomingSection.classList.add('hidden');
+        }
+    }
+
+    function cancelTripQuick() {
+        if(confirm("Yaqindagi sayohatingiz rejasini o'chirmoqchimisiz?")) {
+            const bookings = JSON.parse(localStorage.getItem('localmate_bookings') || '[]');
+            bookings.pop();
+            localStorage.setItem('localmate_bookings', JSON.stringify(bookings));
+            initLocalStorageDashboard();
+            showNotice("Sayohat muvaffaqiyatli o'chirildi!");
+        }
+    }
+
+    function handleBookingSubmit(e) {
+        e.preventDefault();
+        const guide = document.getElementById('guideSelect').value;
+        const date = document.getElementById('travelDate').value;
+        const count = document.getElementById('travelCount').value;
+        const name = document.getElementById('visitorName').value;
+        const telegram = document.getElementById('visitorTelegram').value;
+        const email = document.getElementById('visitorEmail').value;
+
+        const newBooking = { guide, date, count, name, telegram, email, timestamp: Date.now() };
+
+        let bookings = JSON.parse(localStorage.getItem('localmate_bookings') || '[]');
+        bookings.push(newBooking);
+        localStorage.setItem('localmate_bookings', JSON.stringify(bookings));
+
+        closeBookingModal();
+        initLocalStorageDashboard();
+
+        document.getElementById('successToastText').textContent = `Hurmatli ${name}, siz muvaffaqiyatli ravishda ${guide} gidi bilan, ${date} sanasi uchun ${count} kishilik sayohatni band qildingiz. Gid bir zumda ${telegram} orqali sizga bog'lanadi!`;
+        document.getElementById('successModal').classList.remove('hidden');
+    }
+
+    function closeSuccessModal() {
+        document.getElementById('successModal').classList.add('hidden');
+        // Reset form variables
+        document.getElementById('bookingForm').reset();
+    }
+
+    // Bookings log listing dashboard
+    function openMyBookings() {
+        const bookings = JSON.parse(localStorage.getItem('localmate_bookings') || '[]');
+        const container = document.getElementById('bookingsContainer');
+        container.innerHTML = '';
+
+        if (bookings.length === 0) {
+            container.innerHTML = `
+                <div class="text-center py-6">
+                    <span class="material-symbols-outlined text-[48px] text-outline/50">sentiment_dissatisfied</span>
+                    <p class="font-body-md text-on-surface-variant mt-2">Hozircha sayohatlar mavjud emas.</p>
+                </div>
+            `;
+        } else {
+            bookings.forEach((booking, index) => {
+                const card = document.createElement('div');
+                card.className = "p-4 border border-outline-variant rounded-xl bg-surface flex justify-between items-center";
+                card.innerHTML = `
+                    <div>
+                        <div class="font-bold font-headline-sm text-primary">Mate: ${booking.guide}</div>
+                        <p class="text-sm font-body-md text-on-surface-variant">Sana: ${booking.date} • Jamoa: ${booking.count} kishi</p>
+                        <p class="text-xs font-label-sm text-on-surface-variant">Telegram: ${booking.telegram}</p>
+                    </div>
+                    <button onclick="deleteBooking(${index})" class="text-error hover:bg-error-container/35 p-2 rounded-full flex items-center justify-center transition-colors">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                `;
+                container.appendChild(card);
+            });
+        }
+        document.getElementById('bookingsListModal').classList.remove('hidden');
+    }
+
+    function closeBookingsList() {
+        document.getElementById('bookingsListModal').classList.add('hidden');
+    }
+
+    function deleteBooking(index) {
+        if (confirm("Ushbu sayohatni bekor qilmoqchimisiz?")) {
+            let bookings = JSON.parse(localStorage.getItem('localmate_bookings') || '[]');
+            bookings.splice(index, 1);
+            localStorage.setItem('localmate_bookings', JSON.stringify(bookings));
+            openMyBookings();
+            initLocalStorageDashboard();
+        }
+    }
+
+    // AI Matchmaker controller
+    let currentStep = 1;
+    function openMatchmaker() {
+        document.getElementById('matchmakerModal').classList.remove('hidden');
+        resetMatcher();
+    }
+
+    function closeMatchmaker() {
+        document.getElementById('matchmakerModal').classList.add('hidden');
+    }
+
+    function resetMatcher() {
+        currentStep = 1;
+        document.getElementById('matcherStep1').classList.remove('hidden');
+        document.getElementById('matcherStep2').classList.add('hidden');
+        document.getElementById('matcherStep3').classList.add('hidden');
+        document.getElementById('matcherLoading').classList.add('hidden');
+        document.getElementById('matcherResult').classList.add('hidden');
+    }
+
+    function nextStep(step) {
+        document.getElementById('matcherStep1').classList.add('hidden');
+        document.getElementById('matcherStep2').classList.add('hidden');
+        document.getElementById('matcherStep3').classList.add('hidden');
+
+        document.getElementById(`matcherStep${step}`).classList.remove('hidden');
+    }
+
+    let selectedMatch = null;
+    function performAIMatching() {
+        document.getElementById('matcherStep3').classList.add('hidden');
+        const loading = document.getElementById('matcherLoading');
+        loading.classList.remove('hidden');
+
+        // Loader cycle
+        const txt = document.getElementById('loadingText');
+        const stages = [
+            "Sayohat uslubingiz tahlil qilinmoqda...",
+            "Til muvofiqligi aniqlanmoqda...",
+            "Sizga eng mos bo'lgan Mate qidirilmoqda..."
+        ];
+        let stateIndex = 0;
+        const interval = setInterval(() => {
+            if (stateIndex < stages.length) {
+                txt.textContent = stages[stateIndex];
+                stateIndex++;
+            }
+        }, 500);
+
+        setTimeout(() => {
+            clearInterval(interval);
+            loading.classList.add('hidden');
+
+            // Pick guide based on Selected Interest input
+            const interestInput = document.querySelector('input[name="interest"]:checked').value;
+            const styleInput = document.querySelector('input[name="style"]:checked').value;
+            const langInput = document.querySelector('input[name="lang"]:checked').value;
+
+            // Find match
+            let found = mates.find(m => m.category === interestInput);
+            if (!found) found = mates[0]; // fallback path
+
+            selectedMatch = found;
+
+            document.getElementById('resultImage').src = found.image;
+            document.getElementById('resultName').textContent = found.name;
+            document.getElementById('resultRatingBadge').innerHTML = `
+                <span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span> ${found.rating}
+            `;
+            document.getElementById('resultBio').textContent = found.bio;
+
+            const tagsContainer = document.getElementById('resultTags');
+            tagsContainer.innerHTML = '';
+            found.tags.forEach(t => {
+                const badge = document.createElement('span');
+                badge.className = "bg-primary/20 text-primary-fixed-dim px-3 py-1 rounded-full text-xs font-semibold shadow-sm";
+                badge.textContent = t;
+                tagsContainer.appendChild(badge);
+            });
+
+            document.getElementById('matcherResult').classList.remove('hidden');
+        }, 1800);
+    }
+
+    function bookGuideDirectly() {
+        closeMatchmaker();
+        openBookingModal(selectedMatch.name);
+    }
+
+    function chatOnTelegram() {
+        window.open('https://t.me/sam_local_mate', '_blank');
+    }
+
+    // Category modal
+    function openCategoryModal(catType) {
+        const catMap = {
+            'Gastronomik': {
+                title: "Gastronomik Mate",
+                desc: "Samarkand oshxonasi nafaqat palovdan iborat. Bizning gastronomik Mate turlarimiz sizni beqiyos mazzali tandir go'sht pishadigan tumanlarga, ko'p asrlik maxsus somsa go'shalariga va eng shirin choyxonalarga boshlaydi.",
+                icon: "restaurant",
+                color: "bg-primary",
+                guides: ["Jasurbek"]
+            },
+            'Tarixchi': {
+                title: "Tarixchi Mate",
+                desc: "Registon maydoni, Shox-i Zinda yoki Ulug'bek rasadxonasi me'moriy dostonlarini shunchaki ma'lumotlar bilan o'rganmang. Bizning tarixchi yo'lboshchilar sizga Ipak Yo'lining chuqur madaniy qatlamlari, afsonalar va sirlarini yoritib berishadi.",
+                icon: "history_edu",
+                color: "bg-secondary",
+                guides: ["Dilnoza"]
+            },
+            'Foto': {
+                title: "Foto Mate",
+                desc: "Oltin Samarkandning nurlarini o'z kameralari va telefonlariga beqiyos tarzda muhrlashni istovchi fotosuvchilar guruhi. Bizning mates eng chiroyli fotogenik va kam sayyohlar biladigan chiroyli rakurslarni aniq bilishadi.",
+                icon: "camera_alt",
+                color: "bg-surface-container-highest",
+                guides: ["Madina"]
+            },
+            'Bozor': {
+                title: "Bozor Mate",
+                desc: "Samarkandning sharqona nafasi ufurib turgan qadimiy bozori va savdo rasta go'shalarining beqiyos sarguzashtlari. Bozorda turli xil mazzali quruq mevalarni tanlash va chinakam sharqona savdolashish tajribalari.",
+                icon: "local_mall",
+                color: "bg-tertiary-fixed",
+                guides: ["Bekzod"]
+            }
+        };
+
+        const currentCat = catMap[catType];
+        document.getElementById('catTitle').textContent = currentCat.title;
+        document.getElementById('catDesc').textContent = currentCat.desc;
+
+        const iconCont = document.getElementById('catIconContainer');
+        iconCont.className = `w-14 h-14 rounded-full flex items-center justify-center text-white ${currentCat.color}`;
+        iconCont.innerHTML = `<span class="material-symbols-outlined text-2xl">${currentCat.icon}</span>`;
+
+        const guideListing = document.getElementById('catMatesList');
+        guideListing.innerHTML = '';
+        
+        currentCat.guides.forEach(gName => {
+            const guideObj = mates.find(m => m.name === gName);
+            if (guideObj) {
+                const row = document.createElement('div');
+                row.className = "flex items-center gap-3 p-3 bg-surface rounded-xl border border-outline-variant";
+                row.innerHTML = `
+                    <img class="w-12 h-12 rounded-full object-cover" src="${guideObj.image}" alt="Guide photo"/>
+                    <div class="flex-1">
+                        <p class="font-bold text-on-surface text-sm">${guideObj.name}</p>
+                        <p class="text-xs text-on-surface-variant font-label-md">${guideObj.rating} • ${guideObj.reviews}</p>
+                    </div>
+                    <button onclick="closeCategoryModal(); openBookingModal('${guideObj.name}');" class="bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs">Tanlash</button>
+                `;
+                guideListing.appendChild(row);
+            }
+        });
+
+        document.getElementById('categoryModal').classList.remove('hidden');
+    }
+
+    function closeCategoryModal() {
+        document.getElementById('categoryModal').classList.add('hidden');
+    }
+
+    // Notices toast
+    function showNotice(text) {
+        alert(text);
+    }
+
+    // On Load Grid construction
+    window.addEventListener('DOMContentLoaded', () => {
+        const matesGrid = document.getElementById('matesGrid');
+        matesGrid.innerHTML = '';
+
+        mates.forEach(mate => {
+            const card = document.createElement('div');
+            card.className = "bg-surface-container-lowest rounded-xl overflow-hidden card-shadow hover:translate-y-[-6px] transition-all duration-300 flex flex-col h-full border border-outline-variant/30";
+            card.innerHTML = `
+                <div class="h-48 relative">
+                    <img class="w-full h-full object-cover" src="${mate.image}" alt="${mate.name} Profile picture" />
+                    <div class="absolute top-3 left-3 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1 border border-white/20">
+                        <span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="font-label-sm text-label-sm text-on-surface">${mate.rating}</span>
+                    </div>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">${mate.name}</h4>
+                            <span class="text-xs text-primary font-semibold uppercase tracking-wider">${mate.category} Mate</span>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-4 line-clamp-3">${mate.bio}</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-1">
+                            ${mate.tags.map(t => `<span class="bg-surface-container-high px-2 py-0.5 rounded text-xs text-on-surface-variant font-medium">${t}</span>`).join('')}
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="openBookingModal('${mate.name}')" class="flex-1 bg-primary text-on-primary py-2 rounded-full font-label-md text-label-md hover:bg-primary-container transition-colors">
+                                Band qilish
+                            </button>
+                            <a href="https://t.me/sam_local_mate" target="_blank" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-secondary border border-outline-variant hover:bg-secondary hover:text-on-secondary transition-all">
+                                <span class="material-symbols-outlined text-[18px]">alternate_email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            matesGrid.appendChild(card);
+        });
+
+        initLocalStorageDashboard();
+    });
+</script>
+
+</body>
+</html>
